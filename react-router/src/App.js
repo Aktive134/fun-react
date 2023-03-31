@@ -9,6 +9,9 @@ import NewBook from './pages/NewBook'
 import NotFound from './pages/NotFound'
 import BookLayout from './Layout/BookLayout'
 import Contact from './pages/Contact'
+import EmployeePortal from './pages/EmployeePortal'
+import EditEmployee from './components/EditEmployee'
+import AddEmployee from './components/AddEmployee'
 
 function App() {
   return (
@@ -18,7 +21,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/books" element={<BookLayout /> }>
+        <Route path="/employees" element={<EmployeePortal />} />
+        <Route path="/create-employee" element={<AddEmployee />} />
+        <Route path="/edit-employee/:id" element={<EditEmployee />} />
+        <Route path="/books" element={<BookLayout />}>
           <Route index element={<BookList />} />
           <Route path=":id" element={<Book />} />
           <Route path="new" element={<NewBook />} />
