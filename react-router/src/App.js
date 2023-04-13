@@ -12,6 +12,8 @@ import Contact from './pages/Contact'
 import EmployeePortal from './pages/EmployeePortal'
 import EditEmployee from './components/EditEmployee'
 import AddEmployee from './components/AddEmployee'
+import Search from './pages/Search'
+import Shop from './pages/Shop'
 
 function App() {
   return (
@@ -21,9 +23,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/employees" element={<EmployeePortal />} />
         <Route path="/create-employee" element={<AddEmployee />} />
         <Route path="/edit-employee/:id" element={<EditEmployee />} />
+        <Route path="/shop" element={<Shop />} />
         <Route path="/books" element={<BookLayout />}>
           <Route index element={<BookList />} />
           <Route path=":id" element={<Book />} />
