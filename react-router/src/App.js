@@ -14,6 +14,8 @@ import EditEmployee from './components/EditEmployee'
 import AddEmployee from './components/AddEmployee'
 import Search from './pages/Search'
 import Shop from './pages/Shop'
+import SearchTwo from './pages/SearchTwo'
+import Chat from './pages/Chat'
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/search" element={<SearchTwo />} />
+        <Route path="/chat" element={<Chat />} />
         <Route path="/employees" element={<EmployeePortal />} />
         <Route path="/create-employee" element={<AddEmployee />} />
         <Route path="/edit-employee/:id" element={<EditEmployee />} />

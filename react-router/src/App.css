@@ -57,6 +57,7 @@ nav {
   cursor: pointer;
 }
 
+/* child-component implementation */
 .container-div {
   display: flex;
   flex-direction: column;
@@ -82,6 +83,7 @@ nav {
   font-size: 16px;
 }
 
+/* searchImplementation */
 .search-container {
   display: flex;
   justify-content: center;
@@ -99,4 +101,53 @@ nav {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
+}
+
+/* Chat-implementation */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.chat-input {
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  padding: 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.chat-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #4caf50;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.chat-button.sending {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+.chat-button:hover {
+  background-color: #388e3c;
+}
+
+.chat-undo {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #9e9e9e;
+  text-decoration: underline;
+  cursor: pointer;
 }
